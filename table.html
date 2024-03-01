@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table View</title>
+    <style>
+        table{
+            width: 500px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.315);
+           
+        }
+        th{
+            background-color: rgb(13, 189, 196);
+            color: rgb(255, 255, 255);
+            
+            
+        }
+        td{
+            background-color: rgb(168, 255, 251);
+            color: rgb(11, 69, 95);
+            border-radius: 10px;
+        }
+     
+    </style>
+</head>
+<body>
+    <table border="1" >
+ 
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Content</th>
+        </tr>
+   
+        <tr>
+            <td>day 01</td>
+            <td>Introduction to Internet Technologies</td>
+            <td>git</td>
+        </tr>
+       <tr>
+        <td>day 02</td>
+        <td>html review</td>
+        <td>bla bla</td>
+       </tr>
+
+    </table>
+    <br>
+
+    <table>
+        <thead>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </thead>
+
+    <tbody>
+       <tr>
+        <td>Cake</td>
+        <td>12</td>
+        <td>12</td>
+       </tr> 
+       <tr>
+        <td>Toffe</td>
+        <td>121</td>
+        <td>5</td>
+       </tr> 
+       <tr>
+        <td>Biscuit</td>
+        <td>100</td>
+        <td>120</td>
+       </tr> 
+    </tbody>
+    
+       <tfoot>
+            
+                <td>Total</td>
+                <td></td>
+                <td>137</td>
+              
+         </tfoot>
+        </table>
+         <br>
+         <br>
+
+         <h1>Column Merge</h1>
+         <table 
+    
+            border="1"
+            cellspacing=""
+            cellpadding=50%;
+
+         >
+            <tr>
+                <td
+                colspan="2"
+
+                >1</td>
+    
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td
+                colspan="3"
+                >6</td>
+               
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>12</td>
+                <td>12</td>
+            
+            </tr>
+            <tr>
+                <td
+                colspan="3"
+                >13</td>
+                <td>16</td>
+            </tr>
+    
+     </table><br><br>
+
+    <h1>Rows Mer.ge</h1>
+
+        <table>
+            <tr style="height: 100px;">
+                <td
+                rowspan="2"
+                >01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+            </tr>
+            <tr  style="height: 100px;">
+               
+                <td>06</td>
+                <td>07</td>
+                <td
+                rowspan="3"
+                >08</td>
+            </tr>
+            <tr  style="height: 100px;">
+                <td
+                rowspan="2"
+                >09</td>
+                <td>10</td>
+                <td>11</td>
+             
+            </tr>
+            <tr  style="height: 100px;">
+                <td>13</td>
+                <td>14</td>
+               
+              
+            </tr>
+</table>
+         
+  
+    
+
+
+    
+</body>
+</html>
