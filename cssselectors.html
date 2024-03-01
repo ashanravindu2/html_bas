@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssselectors</title>
+
+
+    <style>
+         /* Element Selector */
+        p{
+            color: green;
+        }
+        /* Id Selector */
+        #idselector{
+            color: red;
+        }
+        
+        /* Class Selector */
+        .clzselector{
+            color: blue;
+        }
+        /* Attribute selector */
+        input[type="text"]{
+         background-color: rgb(79, 79, 100);
+         box-shadow: 2px 2px 2px 2px rgba(201, 97, 97, 0.75);
+        }
+        input[type="number"]{
+         background-color: rgb(72, 72, 211);
+         box-shadow: 2px 2px 2px 2px rgba(173, 201, 97, 0.75);
+        }
+
+        /* Pseudo Class Selector */
+        button:hover{
+            background-color: rgb(0, 255, 0);
+            cursor: pointer;
+            transition: .5s;
+        }
+        /* Pseudo Elements */
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        /* Descendant Selector */
+        div article::first-letter{
+            color: blue;
+            font-size: 30px;
+        }
+
+        /* Child Selector */
+        div >h4{
+            color: rgb(255, 0, 149);
+        }
+
+        /* Adjacent sibling Selector */
+        h2+p{
+            background-color:  rgba(255, 0, 0, 0.322);
+        }
+
+        /* General Sibling selector */
+        h4 ~ p{
+            background-color: rgba(36, 36, 236, 0.473);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS SELECTOR</h1>
+
+    ============ 1. Selectors ============
+    <h2>1. Element Selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, soluta temporibus. Eos eius minima vitae, consequuntur id magni vero consectetur!</p>
+
+    <h2>2. Id Selector</h2>
+    <p id="idselector">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias explicabo sunt molestias praesentium quis dolorum provident, autem earum suscipit accusantium.</p>
+
+    <h2>3. Class Selector</h2>
+    <p class="clzselector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit officiis magnam, adipisci ab distinctio? Quidem repudiandae aut vitae quisquam?</p>
+    </h2>
+
+    <h2>4. Attribute selector</h2>
+    <input type="text"placeorder="place Order"><br><br>
+    <input type="number"placeorder="place Order"><br><br>
+
+    <h2>5. Pseudo Class Selector</h2>
+    <button>Tab Here</button>
+
+    <h2>6. Pseudo Elements</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima distinctio sapiente veritatis, quasi saepe? Temporibus, iure hic sunt rerum veniam dolor cumque fugiat quasi beatae, dolore magnam, autem dolores!</p>
+
+    <h2>7. Descendant Selector</h2>
+    <div>
+        <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laborum quaerat assumenda necessitatibus autem culpa doloremque illum natus consequatur blanditiis. Magni dolore laudantium cum corporis reiciendis facilis iure natus error aliquam enim assumenda neque excepturi, sequi animi aut. Illo corporis consequuntur porro laudantium excepturi commodi quo veritatis? Necessitatibus, obcaecati est.</article>
+    </div>
+
+    <h2>8. Child Selector</h2>
+    <div>
+        <h4>Java</h4>
+        <h4>Python</h4>
+        <h4>Html</h4>
+        <h4>Mysql</h4>
+    </div>
+    
+    <h2>9. Adjacent sibling Selector</h2>
+    <h3>Heading 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, officiis? Praesentium velit fuga quas voluptate iste, corporis, est consequuntur quod nobis tempore natus ipsum hic! Dolorem neque dolorum, libero quas eum possimus quia voluptate exercitationem, distinctio iure vel! Quaerat reiciendis facere excepturi officiis facilis? Quos corrupti expedita ullam natus exercitationem!</p>
+
+    <h4>10. General Sibling selector</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, deserunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, praesentium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nisi.</p>
+
+    <h3 style="color: brown;"> CSS Combination</h3><h3>(Descendant Selector + Child Selector + Adjacent sibling Selector + General Sibling selector )</h3>
+
+
+</body>
+</html>

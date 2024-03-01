@@ -1,0 +1,40 @@
+p{
+    color: red;
+}
+.content{
+    color: blue;
+}
+
+#content-id{
+    color: green;
+}
+
+
+/* prority eka low eke idan high wenkn */
+
+h3{
+    color: rgb(201, 10, 10);
+}
+
+.card_title{
+    color: orange;
+
+}
+
+#receipy_card_content{
+    color: purple;
+}
+
+div p{
+    color: rgb(0, 0, 0);
+
+}
+
+h3 .card_title{
+    color: rgb(81, 255, 0);
+}
+
+div #receipy_card_content{
+    color: #1100ff;
+}
+

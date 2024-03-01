@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+
+        /* pseudo classes --- this clz using user interraction element */
+            button:hover{
+            transition: 0.5s;
+            background-color: rgb(0, 255, 0);
+            cursor: pointer;
+         
+        }
+
+        button:active{
+            background-color: rgb(0, 0, 255);
+            
+        }
+        button:focus{
+            background-color: rgb(255, 255, 0);
+            padding: 10px 20px;
+        }
+
+        li:first-child{
+            color: red;
+        }
+
+        li:nth-child(3){
+            color: rgb(0, 255, 0);
+        }
+
+        li:last-child{
+            color: blue;
+        }
+
+        li:nth-child(odd){
+            background-color: rgba(255, 0, 0, 0.219);
+        }
+
+        li:nth-child(even){
+            background-color: rgba(0, 0, 255, 0.226);
+        }
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        p::first-line{
+            color: blue;
+            font-weight: bold;
+        }
+
+        p::before{
+            content: "This is before content ";
+            color: blue;
+        }   
+        p::after{
+            content: " THE END";
+            color: rgb(0, 255, 0);
+        }
+     
+
+
+    </style>
+</head>
+<body>
+    <h1>Lesson Pseudo</h1>
+    <h2>Pseudo Classes</h2>
+    <button>Click Here</button>
+
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Mysql</li>
+        <li>HTML</li>
+    </ul>
+
+    <h2>Pseudo Elements</h2>
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sint et quidem cumque eligendi nesciunt officia magnam provident dolor rem?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit minima necessitatibus dolorem cum. Corporis saepe incidunt officiis earum, eligendi nihil, quisquam minima praesentium tenetur eveniet, recusandae dolores vitae aut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dolore ratione laborum rerum voluptate repellendus, veritatis non quos voluptatum adipisci dicta, sed labore esse maiores assumenda hic ullam molestiae libero.</P>
+
+
+    
+</body>
+</html>
