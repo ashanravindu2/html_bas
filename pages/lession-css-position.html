@@ -11,16 +11,53 @@
         height: 100px;
         background-color: brown;
         border: 1px solid black;
-        position: fixed;
-        border-radius: 10px 10px 0px 0px;
+        position: static;
+        top: 100px;
+        left: 100px;
       }
+
       .box2 {
-        width: 110px;
-        height: 110px;
-        background-color: rgb(53, 26, 26);
+        width: 100px;
+        height: 100px;
+        background-color: brown;
         border: 1px solid black;
-        position: relative;
+        position:relative;
+        top: 10px;
+        left: 150px;
       }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(116, 42, 165);
+        border: 1px solid black;
+        position:absolute;
+        top: 600px;
+        left: 150px;
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 217, 0);
+        border: 1px solid black;
+        position:fixed;
+        top: 0px;
+        left: 90px;
+      }
+
+      
+      .box5 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 102, 0);
+        border: 1px solid black;
+        position:sticky;
+        top: 600px;
+        left: 150px;
+      }
+
+
     </style>
   </head>
   <body>
@@ -28,17 +65,24 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quod commodi
       qui! Ducimus, ad maiores temporibus distinctio amet error quae neque
       voluptatem eveniet enim optio voluptas. Doloremque ipsum, vero repellendus
-      vitae incidunt illum? Explicabo obcaecati ut cupiditate distinctio ex,
-      nisi accusamus illum veniam consequatur, quas illo cum expedita reiciendis
-      debitis nemo placeat odio non vel nihil, labore ad repellendus nobis?
-      Obcaecati, voluptatem molestiae? Error, blanditiis vel. Vitae, error qui
-      eius saepe esse cupiditate delectus sit accusamus unde deleniti aliquam
-      ullam alias rerum, provident earum eligendi reprehenderit consectetur est
-      in natus perspiciatis aliquid optio amet dolores. Animi pariatur expedita
-      nisi voluptate.
+      vitae incidunt illum? Explicabo obcaecati ut cupiditate distinctio.
     </p>
 
+    <h4>[position:static;] = position default add wenne position:static; , so top and left style not work</h4>
     <div class="box"></div>
+
+    <h4>[position:relative] = if any change request the change will happen relative to the parent element </h4>
     <div class="box2"></div>
+
+    <h4>[position:absolute ] = the changes/styles will apply relative to browser/file</h4>
+
+    <div class="box3"><p>absolute</p></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum a iusto pariatur nam reiciendis minima nihil quo similique adipisci, illum incidunt maiores vel vitae officiis cum necessitatibus quia cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum labore sequi libero ea accusamus distinctio velit, fugit ullam perferendis alias maxime quibusdam fuga doloribus reiciendis obcaecati facere itaque nam dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita consectetur voluptates alias corporis, illum magnam nostrum reprehenderit asperiores sed repellat ad, cupiditate laborum. Alias exercitationem veniam porro sunt magni.</p>
+
+
+    <div class="box4"><p>fixed</p></div>
+    <div class="box5"><p>sticky</p></div>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti aliquam non suscipit enim cumque ratione, consectetur eveniet delectus explicabo amet molestiae, assumenda perspiciatis tempora dolorum commodi sunt maiores placeat unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita alias et id numquam dicta atque impedit, eveniet nesciunt iusto iste a optio sapiente, harum quis neque quaerat blanditiis eligendi amet.</p>
   </body>
 </html>

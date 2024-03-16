@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: 200px auto;
+        /* transition-property: width;
+            transition-duration: 5s;
+            transition-timing-function: ease;
+            transition-delay: 5s; */
+
+        transition: width 3s ease 2s;
+      }
+      .box:hover {
+        width: 200px;
+      }
+
+
+      .box1 {
+        color: rgb(25, 25, 35);
+        font-size: 10px;
+
+        transition: font-size 3s ease 4s;
+      }
+      .box1:hover {
+        font-style: italic;
+        color: blue;
+        font-size: 20px;
+      }
+
+      .box3{
+        width: 1px;
+        height: 25px;
+        top: 30px;
+        left: 50px;
+        animation-name: square;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .image1{
+        animation-name: square;
+        opacity: 0;
+      }
+
+
+      @keyframes square {
+        /* from{
+            background-color: brown;
+        }to{
+            background-color: yellow;
+        } */
+            20%{
+                background-color: rgb(255, 0, 0);
+                width: 25%;
+            }
+            30%{
+                background-color: rgb(255, 153, 0);
+                width:35%  ;
+            }
+            60%{
+                background-color: rgb(251, 255, 0);
+                width: 60%;
+            }
+            80%{
+                background-color: rgb(38, 255, 0);
+                width: 100%;
+            }
+
+
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1">
+      <h1>Hello world</h1>
+    </div><br>
+<div class="image1"><img src="/assets/fuck.png" alt=""></div>
+
+<div class="box3"></div>
+
+  </body>
+</html>
