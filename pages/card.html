@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(221, 226, 224);
+   
+        
+      }
+      .mainContainer{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 20px;
+      }
+      .container {
+        background-color: rgb(23, 23, 88);
+        width: 300px;
+        border: 2px solid rgb(59, 57, 57);
+        height: 290px;
+        border-radius: 9px;
+        box-shadow: 1px 1px 9px 1px rgb(65, 62, 62);
+
+      }
+      .box {
+        margin: 8px;
+      }
+      .box img {
+        border: 1px solid black;
+        width: 40px;
+        border-radius: 100px;
+        box-shadow: 1px 1px 10px 1px black;
+      }
+      .box2 {
+        background-color: rgba(8, 22, 83, 0.712);
+        width: 250px;
+        border: 3px solid rgb(148, 145, 145);
+        height: 180px;
+        margin-left: 12px;
+        margin-top: 30px;
+        text-align: left;
+        border-radius: 5px;
+        box-shadow: 1px 1px 15px 1px rgb(107, 76, 99);
+        transition: 0.2ms;
+      }
+
+      .box2:hover {
+        transition: 0.2ms;
+        width: 250px;
+        height: 180px;
+        box-shadow: 2px 2px 15px 2px rgb(0, 204, 255);
+       
+      }
+
+      .box2 > p {
+        margin-left: 8px;
+        color: aliceblue;
+      }
+      .box2 > h6 {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        margin-top: 2px;
+        margin-left: 150px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* #star img {
+        width: 100px;
+      }
+      #star {
+        margin-top: -33px;
+        margin-left: 172px;
+        text-align: center;
+      } */
+
+      .rating{
+    position: absolute;
+    transform: translate(1px);
+    margin-left: 130px;
+    margin-top: -48px;
+    
+
+}
+.rating input{
+display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    float: right;
+}
+.rating label:before{
+    content: '\2605';
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: rgb(190, 184, 184);
+
+}
+.rating label:after{
+    content: '\2605';
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 217, 0);
+    top:0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.479);
+
+    
+}
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked ~label:after {
+    opacity: 1;
+}
+
+     
+      @media screen and (min-width: 0px) and (max-width: 575px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+
+     
+        }
+      
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+         
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+      
+        }
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+      
+        }
+      }
+
+      @media screen and (min-width: 1200) and (max-width: 1399px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          
+        }
+
+      }
+
+      @media screen and (min-width: 1400px) {
+        .mainContainer {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          
+        }
+      }
+     
+      .scrollable-review{
+        max-height: 100px;
+        overflow: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p class="scrollable-review">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.edefefefefeeeeeeeeeeeeefefefef edefefefefeeeeeeeeeeeeefefefef
+              edefefefefeeeeeeeeeeeeefefefefefefefe
+              fef edefefefefeeeeeeeeeeeeefefefefefefef ef
+              efe fe
+              fe fe
+              fefefefefefefeeeeeeeeee fefefefefefefeeeeeeeeee edefefefefeeeeeeeeeeeeefefefefefefefe
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+
+   <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+
+      <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+
+     <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+
+      <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <img src="/assets/cat.jpeg" alt="" />
+          <div id="star">
+          <div class="rating">
+            <input type="radio" name="star" id="star1" ><label for="star1"></label>
+            <input type="radio" name="star" id="star1"><label for="star2"></label>
+            <input type="radio" name="star" id="star1"><label for="star3"></label>
+            <input type="radio" name="star" id="star1"><label for="star4"></label>
+            <input type="radio" name="star" id="star1"><label for="star5"></label>
+          </div>
+         </div>
+          <div class="box2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              nisi unde corporis maiores quae asperiores provident incidunt eaque
+              maxime, cumque, voluptas quod deleniti.
+            </p>
+            <h6>Ashan Ravindu</h6>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+
+      
+    
+   
+    
+</html>

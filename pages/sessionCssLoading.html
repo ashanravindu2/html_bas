@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .losding {
+        font-size: 390px;
+        display: flex;
+        justify-content: center;
+
+      }
+      h1{
+        text-align: center;
+        color: rgb(7, 97, 133);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+          
+      }
+      .box {
+        position: relative;
+        animation-name: square;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+    }
+      @keyframes square {
+        0%,100% {
+        top: 0;
+        }
+       
+        50% {
+         top : 50px
+      
+      }
+    }
+      .box1 {
+        animation-delay: 0s;
+      }
+      .box2 {
+        animation-delay: 250ms;
+      }
+      .box3 {
+        animation-delay: 500ms;
+      }
+
+      .box4 {
+        animation-delay: 750ms;
+      }
+
+      .box5 {
+        animation-delay: 1000ms;
+      }
+
+      .box6 {
+        animation-delay: 1250ms;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <h1>LOADING</h1>
+    <div class="losding">
+      <div class="box box1" style="color: rgb(12, 187, 187);">.</div>
+      <div class="box box2" style="color: rgb(10, 148, 167);">.</div>
+      <div class="box box3" style="color: rgb(13, 106, 132);">.</div>
+      <div class="box box4" style="color: rgb(10, 109, 109);">.</div>
+      <div class="box box5" style="color: rgb(6, 66, 90);">.</div>
+      <div class="box box6" style="color: rgb(1, 25, 25);">.</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lession-Css-Media-Query_01</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        h2{
+            color: brown;
+            text-decoration: underline;
+        }
+        p{
+            color: blue;
+        }
+
+        /* @media  scree {} by default size all */
+
+        @media screen and (max-width:500px){
+            h2{
+                color: black;
+            }
+            #max_width{
+                color: red;
+            }
+        }
+        @media screen and (min-width:500px) {
+            #min_width{
+                color: red;
+            }
+            p{
+                color: red;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet;text-align: center;"><b>Lession_Css_Media_Query_01</b></h1>
+
+
+    <h2>Main Queries</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus autem explicabo iure dignissimos provident magni inventore quod vel alias sunt hic et perspiciatis molestiae, facere impedit ut mollitia dolore fuga pariatur modi sed beatae. Odit minima cupiditate quidem deleniti. Ipsam a quam odio ex quo perspiciatis consequatur labore reiciendis possimus?</p>
+
+    <h1 id="max_width">Media Screen(Max_width)</h1>
+    <h1 id="min_width">Media Screen(Min_width)</h1>
+    
+</body>
+</html>

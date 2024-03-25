@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashan Ravindu</title>
-    <link rel="icon" href="assets/orange fluffy ball with wide eyes and a gentle smile.png" type="image/png">
+    <link
+      rel="icon"
+      href="assets/orange fluffy ball with wide eyes and a gentle smile.png"
+      type="image/png"
+    />
 
     <style>
-     body{
+      body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        background-color: rgb(21, 10, 71);
-            
-        }
-     img{
-            width: 200px;
-            height: 200px;
-            border-radius: 200px;
-            border: 6px solid rgb(255, 251, 0);
-        }
-       p{
-           padding: 12px;
-            color: azure;
-            align-content: center;
-        }
-        h1{
-            color: rgb(229, 255, 0);
-        }
-        h2{
-            color: aliceblue;
-        }
-        a{
-            color: #ffffff;
-            
-        }
+        background: linear-gradient(to left, #002835 0%, #069bc0 100%);
+        
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        border: 6px solid rgb(255, 251, 0);
+        object-fit: cover;
+      }
+     
 
+      #btn {
+        width: 180px;
+        height: 50px;
+        background-color: rgb(116, 255, 243);
+        border-radius: 11px;
+        margin: 12px;
+        font-weight: bolder;
+      }
+      #btnExe {
+        margin: 12px;
+        font-weight: bolder;
+        background-color: rgb(255, 255, 255);
+        width: 180px;
+        height: 50px;
+        border-radius: 11px;
+      }
+      #btn:hover {
+        box-shadow: 2px 2px 12px 2px rgb(255, 255, 255);
+      }
+      #btnExe:hover {
+        box-shadow: 2px 2px 12px 2px #0066ff;
+      }
+      .container{
+        text-align: center;
+      }
 
     </style>
-</head>
-<body>
-   
-    <h1><b>HTML CONTENT</b></h1>
-    <img src="assets/myphoto.jpg">
-   
- 
-    <h2>Ashan Ravindu</h2>
-    <a href="pages/textlist.html">Text List Add</a><br>
-    <a href="pages/exercise.html">Exercise 01</a><br>
-    <a href="pages/multimedia.html">Multimedia Add</a><br>
-    <a href="pages/exercise2.html">Exercise 02</a><br>
-    <a href="pages/table.html">Table View</a><br>
-    <a href="pages/contactUs.html">Contact US</a><br>
-    <a href="pages/css.html">Css</a><br>
-    <a href="pages/css_background.html">Css Background View</a><br>
-    <a href="pages/cssselectors.html">Css Selector</a><br>
-    <a href="pages/cssText.html">Css Text</a><br>
-    <a href="pages/dev.html">Structure Element</a><br>
-    <a href="pages/pseudu.html">Css(Lesson Pseudo)</a><br>
-    <a href="pages/specificity.html">CSS specificity</a><br>
-    <a href="pages/lesson-border.html">Css border</a>
-    <a href="pages/lesson_border2.html">Css border 2</a>
-    <a href="pages/lesson_margin.html">Css margin</a>
-    <a href="pages/lession-css-unit.html">Css unit</a>
-    <a href="pages/lession-css-position.html">Css position</a>
-    <a href="pages/lession-css-float.html">Css float</a>
-    <a href="pages/cssImportant.html">Css important style</a>
-    <a href="pages/exerciseSize.html">Exercise sizes</a><br>
-    <a href="pages/exercisemargin.html">Exercise margin</a><br>
-    <a href="pages/exercise3_card_style.html">Css card</a>
-    
-    
-   
 
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;color: #002238;
+      "
+    >
+      <b>HTML CONTENT</b>
+    </h1>
+    <img src="assets/image/myphoto.jpg" />
 
-    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <b>Recusandae</b> eius
-         deleniti ullam nobis ex eum nostrum <u>tempora molestiae</u> ut officiis <i>molestias</i> aperiam 
-        numquam, beatae, dolore eveniet accusamus, doloremque animi officia nisi.
-         Consectetur voluptatum sed aperiam perspiciatis voluptate doloribus 
-         corrupti id, expedita nisi accusamus recusandae incidunt 
-        aspernatur, obcaecati eaque ab excepturi. Dolorem officia corporis
-         ex ad aliquam quod nisi, minus saepe sed veritatis atque voluptatem 
-         omnis neque assumenda, eaque, asperiores facere! Velit deserunt 
-        dolorem ad explicabo quos! <sub>Nam</sub> corrupti aut minima <sup>suscipit</sup> quasi earum
-         facere repudiandae unde? Quaerat, <mark>dignissimos</mark> similique perferendis harum
-          vitae voluptatem aspernatur minus accusantium. 
-        Incidunt corporis eos vitae!</p>
+    <h2 style="color: #ffffff;">Ashan Ravindu</h2>
+    <h4 style="color: #ffffff">GDSE-68</h4>
 
-    <a href="index2.html"><b>Click here 2</b></a>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+    <div class="container">
+        
+    <a href="pages/textlist.html">
+      <button id="btn">Text List Add</button>
+    </a>
+    <a href="pages/exercise.html">
+      <button id="btnExe">Exercise 01</button>
+    </a>
+    <a href="pages/multimedia.html">
+      <button id="btn">Multimedia Add</button>
+    </a>
+    <a href="pages/exercise2.html"><button id="btnExe">Exercise 02</button></a>
+    <a href="pages/table.html"><button id="btn">Table View</button></a>
     
-</body>
+    <a href="pages/contactUs.html"><button id="btn">Contact US</button></a>
+    
+    <a href="pages/css.html"><button id="btn">Css</button></a>
+    <a href="pages/css_background.html"
+      ><button id="btn">Css Background View</button></a
+    >
+    <a href="pages/cssselectors.html"><button id="btn">Css Selector</button></a>
+    <a href="pages/cssText.html"><button id="btn">Css Text</button></a>
+    <a href="pages/dev.html"><button id="btn">Structure Element</button></a>
+    <a href="pages/pseudu.html"><button id="btn">Css(Lesson Pseudo)</button></a>
+    <a href="pages/specificity.html"
+      ><button id="btn">CSS specificity</button></a
+    >
+    <a href="pages/lesson-border.html"><button id="btn">Css border</button></a>
+    <a href="pages/lesson_border2.html"
+      ><button id="btn">Css border 2</button></a
+    >
+    <a href="pages/lesson_margin.html"><button id="btn">Css margin</button></a>
+    <a href="pages/lession-css-unit.html"><button id="btn">Css unit</button></a>
+    <a href="pages/lession-css-position.html"
+      ><button id="btn">Css position</button></a
+    >
+    <a href="pages/lession-css-position-exercise.html"
+      ><button id="btnExe">lession-css-position-exercise-1</button></a
+    >
+    <a href="pages/lession-css-position-exercise2.html"
+      ><button id="btnExe">lession-css-position-exercise-2</button></a
+    >
+    <a href="pages/lession-css-float.html"
+      ><button id="btn">Css float</button>
+    </a>
+    <a href="pages/cssImportant.html"
+      ><button id="btn">Css important style</button></a
+    >
+    <a href="pages/exerciseSize.html"
+      ><button id="btnExe">Exercise sizes</button></a
+    >
+    <a href="pages/exercisemargin.html"
+      ><button id="btnExe">Exercise margin</button></a
+    >
+    <a href="pages/exercise3_card_style.html"
+      ><button id="btn">Css card</button></a
+    >
+    <a href="pages/lession-css-grid-Layout.html"
+      ><button id="btn">lession-css-grid-Layout</button></a
+    >
+    <a href="pages/lsession-css-grid-Exercise.html"
+      ><button id="btnExe">lession-css-grid-Layout-Exercise</button></a
+    >
+    <a href="pages/lession-css-FlexBox.html"
+      ><button id="btn">lession-css-FlexBox</button></a
+    >
+    <a href="pages/lession-css-flexbox-exercise.html"
+      ><button id="btn">lession-css-flexbox-exercise</button>
+    </a>
+    <a href="pages/lession-Css-Media-Query_01.html"
+      ><button id="btn">lession-Css-Media-Query_01</button></a
+    >
+    <a href="pages/sessionCssLoading.html"
+      ><button id="btn">Session Css Loading</button></a
+    >
+    <a href="pages/lessioncssAnimation.html"
+      ><button id="btn">lession Css Animation</button></a
+    >
+    <a href="pages/lession_Boostrap.html"
+      ><button id="btn">lession_Boostrap</button></a
+    >
+    <a href="pages/Lession-Bootstrap-grid.html"
+      ><button id="btn">Lession-Bootstrap-grid</button></a
+    >
+    <a href="pages/exercise_Boosttrap_grid.html"
+      ><button id="btnExe">Exercise_Boosttrap_grid-01</button></a>
+      
+      <a href="pages/Lession-Bootstrap-grid_Exercise.html"
+      ><button id="btnExe">Exercise_Boosttrap_grid-02</button></a>
+
+      <a href=""
+      ><button id="btn"></button></a>
+
+      <a href=""
+      ><button id="btn"></button></a>
+
+      <a href=""
+      ><button id="btn"></button></a>
+
+      <a href=""
+      ><button id="btn"></button></a>
+      
+    </div>
+    
+  </body>
 </html>

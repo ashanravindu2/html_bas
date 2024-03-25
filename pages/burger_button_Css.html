@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: rgba(127, 255, 212, 0.445);
+
+      }
+      .container {
+        border: 0px solid black;
+        height: 130px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+      }
+      .profile-img{
+        border-radius: 100%;
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+      .header-container{
+        display: flex;
+        justify-content: right;
+        margin-right: 50px;
+        margin-top: -62px;
+        gap: 30px;
+      }
+      .header-container>a{
+        color: aliceblue;
+        font-size: 30px;
+      }
+
+      .burger-bar{
+        display: none;
+     
+      }
+
+      .burger-bar>img{
+        width: 50px;
+        height: 50px;
+        margin-left: 200px;
+        margin-top: -15px;
+        
+      }
+
+      @media screen and (max-width: 656px){
+        .header-container>a{
+          display: none;
+
+        }
+        .burger-bar{
+            display: block;
+   
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img class="profile-img" src="/assets/myphoto.jpg" alt="">
+        <nav class="header-container">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+            <a href="">DETAIL</a>
+        </nav>
+        <nav class="burger-bar">
+            <img src="/assets/menu.png" alt="">
+        </nav>
+      </div>
+      
+    </header>
+  </body>
+</html>
